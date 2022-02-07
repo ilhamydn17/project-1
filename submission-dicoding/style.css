@@ -10,16 +10,13 @@ body {
   padding: 0;
   color: #323232;
   background-color: #E8F0F2;
-  /* background-image: url("assets/bg2-web.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 
 header {
   display: inline;
 }
 
+/* Styling Header */
 .jumbotron {
   width: 100%;
   height: 100%;
@@ -85,7 +82,9 @@ nav ul li a:hover {
 .logo-nav-side img {
   width: 100px;
 }
+/* End styling of Header */
 
+/* Styling Main */
 #content{
   width: 70%;
   float: left;
@@ -153,12 +152,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-footer {
-  padding: 35px;
-  text-align: center;
-  background-color: #5584AC;
-  color: #FBF8F1;
-}
 
 .card-album {
   width: 70%;
@@ -253,11 +246,24 @@ section p{
 .icon{
   flex-grow: 1;
 }
+/* End Styling of Main */
+
+
+/* Styling of Footer */
+footer {
+  padding: 35px;
+  text-align: center;
+  background-color: #5584AC;
+  color: #FBF8F1;
+}
+
+/* End Styling of foof */
 
 @media screen and (max-width : 900px){
   #content, aside{
     width: 100%;
   }
+
 
   .wrapper{
     padding: 10px;
@@ -266,11 +272,17 @@ section p{
   }
 
   .container-nav{
+    max-height: 80px;
     margin: 0 15px 0 15px;
     display: flex;
     width: fit-content;
     overflow: auto;
   }
+
+  .image-card{
+    max-width: 200px;
+  }
+
   .boxJudul{
     line-height: 1.8em;
   }
